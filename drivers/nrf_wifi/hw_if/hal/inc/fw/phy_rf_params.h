@@ -114,7 +114,7 @@
 
 
 /** Systematic error between set power and measured power in dBm */
-#define QFN_SYSTEM_OFFSET_LB 3
+#define QFN_SYSTEM_OFFSET_LB 0x33
 #define QFN_SYSTEM_OFFSET_HB_CHAN_LOW 3
 #define QFN_SYSTEM_OFFSET_HB_CHAN_MID 3
 #define QFN_SYSTEM_OFFSET_HB_CHAN_HIGH 3
@@ -175,7 +175,7 @@
 /** Systematic error between set power and measured power in dBm in 2.4G band */
 #define CSP_DSSS_BKF 4
 #define CSP_OFDM_BKF 5
-#define CSP_SYSTEM_OFFSET_LB ( ( CSP_DSSS_BKF << 4 ) | CSP_OFDM_BKF )
+#define CSP_SYSTEM_OFFSET_LB ( ( CSP_OFDM_BKF << 4 ) | CSP_DSSS_BKF )
 
 /** Systematic error between set power and measured power in dBm in 5G band */
 #define CSP_SYSTEM_OFFSET_HB_CHAN_LOW 5
